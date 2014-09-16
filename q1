@@ -1,0 +1,5 @@
+q1 
+
+A diferença básica entre as duas expressões:
+V[3], cria uma lista de 3 posições. 
+V+3, soma 3 elementos a variável "V"

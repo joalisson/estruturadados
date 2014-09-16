@@ -1,0 +1,10 @@
+
+O código retorna o valor de x, no ponteiro *p. Que no caso seria 100
+
+void main() { 
+int x, *p; 
+x = 100; 
+p = x;  
+printf(“Valor de p: %d.\n”, *p); 
+} 
+
