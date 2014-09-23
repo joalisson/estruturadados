@@ -1,0 +1,12 @@
+9) Qual o resultado do código abaixo? Explique cada linha.
+
+int x = 100, *p, **pp; // variável x recebe 100, inicializa um ponteiro "p" e um ponteiro
+de ponteiro de pp
+
+
+p = &x; //p recebe o endereço de x;
+
+pp = &p; //pp recebe o endereço de p
+
+printf(“Valor de pp: %d\n”, **pp); //Printa o valor de "pp" que no caso seria o endereco de 
+memoria de x. 
