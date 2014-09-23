@@ -4,32 +4,35 @@ O código retorna o valor de x, no ponteiro *p. Que no caso seria 100
 void main() { 
 int x, *p; 
 x = 100; 
-p = x;  
+p = x; //a variavel devia retornar &x 
 printf(“Valor de p: %d.\n”, *p); 
 } 
 
 b)
+>> Codigo com erro :
 É feita uma troca de valores entre os ponteiros.
 
 void troca (int *i, int *j) {
 
-int *temp;
+int temp;
 
-*temp = *i;
+temp = *i;
 
 *i = *j;
 
-*j = *temp;
+*j = temp; //variavel temp não necessita ser ponteiro, já que tá apenas amarzenando o valor dos ponteiros.
 
 }
 
 c)
 
+>> Codigo com erro:
+
 char *a, *b;
 
-a = "abacate";
+a = "abacate"; //ponteiro nao possui memoria alocada e nao aponta pra nenhum local
 
-b = "uva";
+b = "uva"; //mesma coisa da variável a
 
 if (a < b)
 
@@ -38,3 +41,15 @@ printf ("%s vem antes de %s no dicionário", a, b);
 else
 
 printf ("%s vem depois de %s no dicionário", a, b);
+
+
+>>> Forma correta: 
+char a[]  = "abacate", b[]="uva"
+if (a[0] < b[0]){ 
+	printf("%s vem antes de %s", a, b);
+	} 
+else{ 
+	printf("%s vem depois de %s", a, b);
+
+
+
