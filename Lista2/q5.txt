@@ -1,0 +1,12 @@
+5)Qual o conteudo do vetor a depois dos seguintes
+comandos.
+
+int a[99]; //Inicializa um vetor com 99 posicoes 
+
+for (i = 0; i < 99; ++i) a[i] = 98 - i; 
+// laço de repeticao, que inicia em 0 e vai até 99. Vetor inicia na 
+primeira posicao e recebe 98 - i (i que no caso é 0); e armazena o valor 
+na primeira posicao, e o vetor passa a ter 98 posicoes.
+
+for (i = 0; i < 99; ++i) a[i] = a[a[i]];
+//mesmo processo do primeiro for, o vetor "a" recebe vetor de vetor do valor de  i. 
